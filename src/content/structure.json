@@ -1,0 +1,637 @@
+{
+  "meta": {
+    "appName": "Spontaneity Trainer",
+    "philosophy": [
+      "Respond before perfecting.",
+      "Say something rather than disappearing.",
+      "Your goal isn't to be impressive. Your goal is to stay present.",
+      "Playfulness is experimentation.",
+      "Assertiveness can be calm.",
+      "Awkwardness can be survived.",
+      "Learn to access your own thoughts in real time."
+    ],
+    "encouragingPhrases": [
+      "Say something. It doesn't have to be perfect.",
+      "Don't search for the perfect answer.",
+      "Your first response is the training.",
+      "You're here to practice, not to perform.",
+      "Imperfect is still present."
+    ]
+  },
+  "modes": [
+    {
+      "id": "instant_response",
+      "label": "Instant Response",
+      "description": "See a situation, respond fast. Speed over perfection.",
+      "tagline": "Trust your first instinct.",
+      "icon": "Zap"
+    },
+    {
+      "id": "three_ways",
+      "label": "Three Ways",
+      "description": "One situation, three different responses. Build flexibility.",
+      "tagline": "There's no single right answer.",
+      "icon": "Shuffle"
+    },
+    {
+      "id": "boundary_practice",
+      "label": "Boundary Practice",
+      "description": "Respond to disrespect, pressure, and unwanted requests clearly and calmly.",
+      "tagline": "Calm and clear.",
+      "icon": "Shield"
+    },
+    {
+      "id": "play_mode",
+      "label": "Play Mode",
+      "description": "Make ordinary interactions more playful. Experiment freely.",
+      "tagline": "Experiment, don't perform.",
+      "icon": "Sparkles"
+    },
+    {
+      "id": "social_recovery",
+      "label": "Social Recovery",
+      "description": "Practice recovering after an awkward moment. Normalize bouncing back.",
+      "tagline": "Awkwardness can be survived.",
+      "icon": "RefreshCw"
+    }
+  ],
+  "categories": [
+    {
+      "id": "friends",
+      "label": "Friends",
+      "description": "Everyday interactions with friends and peers."
+    },
+    {
+      "id": "work",
+      "label": "Workplace",
+      "description": "Professional settings and colleague interactions."
+    },
+    {
+      "id": "family",
+      "label": "Family",
+      "description": "Family dynamics and gatherings."
+    },
+    {
+      "id": "dating",
+      "label": "Dating",
+      "description": "Romantic interests and early connections."
+    },
+    {
+      "id": "strangers",
+      "label": "Strangers",
+      "description": "New people and unfamiliar social situations."
+    },
+    {
+      "id": "conflict",
+      "label": "Conflict",
+      "description": "Tension, disagreement, and friction."
+    },
+    {
+      "id": "awkward",
+      "label": "Awkward Moments",
+      "description": "Cringe-worthy situations and recovery."
+    }
+  ],
+  "skills": [
+    {
+      "id": "speed",
+      "label": "Response Speed",
+      "description": "Responding quickly without overthinking."
+    },
+    {
+      "id": "flexibility",
+      "label": "Flexibility",
+      "description": "Generating multiple kinds of responses."
+    },
+    {
+      "id": "assertiveness",
+      "label": "Assertiveness",
+      "description": "Expressing your position clearly and calmly."
+    },
+    {
+      "id": "playfulness",
+      "label": "Playfulness",
+      "description": "Adding lightness and humor to interactions."
+    },
+    {
+      "id": "honesty",
+      "label": "Honesty",
+      "description": "Saying what you actually think and feel."
+    },
+    {
+      "id": "recovery",
+      "label": "Recovery",
+      "description": "Bouncing back after an awkward moment."
+    },
+    {
+      "id": "boundaries",
+      "label": "Boundaries",
+      "description": "Setting and holding clear limits."
+    },
+    {
+      "id": "curiosity",
+      "label": "Curiosity",
+      "description": "Asking genuine questions to deepen the exchange."
+    }
+  ],
+  "difficulties": [
+    {
+      "id": "easy",
+      "label": "Easy",
+      "description": "Low-stakes, everyday situations."
+    },
+    {
+      "id": "medium",
+      "label": "Medium",
+      "description": "Moderate social pressure or complexity."
+    },
+    {
+      "id": "hard",
+      "label": "Hard",
+      "description": "High-stakes or emotionally charged."
+    }
+  ],
+  "prompts": [
+    {
+      "id": "ir-001",
+      "category": "friends",
+      "skill": "speed",
+      "difficulty": "easy",
+      "trainingModes": ["instant_response"],
+      "situation": "You arrive a little late to meet your friend at a coffee shop.",
+      "otherPerson": "Bro, you're always late.",
+      "instruction": "Respond within 3 seconds.",
+      "timeLimitSeconds": 3,
+      "examples": [
+        { "mode": "playful", "text": "I'm conserving my best material. You're welcome." },
+        { "mode": "honest", "text": "Yeah, I left late. Sorry about that." },
+        { "mode": "curious", "text": "Always? Or just the last two times?" }
+      ],
+      "reflectionQuestions": [
+        { "id": "r1", "text": "Did you say what you actually wanted to say?" },
+        { "id": "r2", "text": "Did you respond before overthinking?" }
+      ]
+    },
+    {
+      "id": "ir-002",
+      "category": "work",
+      "skill": "speed",
+      "difficulty": "medium",
+      "trainingModes": ["instant_response"],
+      "situation": "A coworker stops you in the hallway and asks about your weekend.",
+      "otherPerson": "So did you do anything fun, or just your usual nothing?",
+      "instruction": "Respond within 3 seconds.",
+      "timeLimitSeconds": 3,
+      "examples": [
+        { "mode": "playful", "text": "I did absolutely nothing and it was magnificent." },
+        { "mode": "honest", "text": "Mostly relaxed at home. Needed the downtime." },
+        { "mode": "assertive", "text": "I actually had a great weekend, thanks." }
+      ],
+      "reflectionQuestions": [
+        { "id": "r1", "text": "Did you shrink your answer to avoid judgment?" },
+        { "id": "r2", "text": "What did you hold back?" }
+      ]
+    },
+    {
+      "id": "ir-003",
+      "category": "friends",
+      "skill": "speed",
+      "difficulty": "easy",
+      "trainingModes": ["instant_response"],
+      "situation": "Your friend shows you a photo of their new haircut.",
+      "otherPerson": "Be honest — does it look weird?",
+      "instruction": "Respond within 3 seconds.",
+      "timeLimitSeconds": 3,
+      "examples": [
+        { "mode": "playful", "text": "Weird is your brand. Own it." },
+        { "mode": "honest", "text": "It's different, but it suits you." },
+        { "mode": "curious", "text": "Do you like it? That's what matters." }
+      ],
+      "reflectionQuestions": [
+        { "id": "r1", "text": "Were you honest, or did you say what they wanted to hear?" },
+        { "id": "r2", "text": "Did you respond before overthinking?" }
+      ]
+    },
+    {
+      "id": "ir-004",
+      "category": "strangers",
+      "skill": "speed",
+      "difficulty": "medium",
+      "trainingModes": ["instant_response"],
+      "situation": "Someone at a party asks what you do for work.",
+      "otherPerson": "Oh, so you're one of those creative types? How's that working out?",
+      "instruction": "Respond within 3 seconds.",
+      "timeLimitSeconds": 3,
+      "examples": [
+        { "mode": "playful", "text": "It's going great if you don't count my bank account." },
+        { "mode": "honest", "text": "It has its ups and downs, but I enjoy it." },
+        { "mode": "assertive", "text": "It's going well, actually. I chose it on purpose." }
+      ],
+      "reflectionQuestions": [
+        { "id": "r1", "text": "Did you defend yourself or shrink?" },
+        { "id": "r2", "text": "What did you hold back?" }
+      ]
+    },
+    {
+      "id": "ir-005",
+      "category": "dating",
+      "skill": "speed",
+      "difficulty": "medium",
+      "trainingModes": ["instant_response"],
+      "situation": "You're on a date and there's a brief lull in conversation.",
+      "otherPerson": "So... what do you usually talk about on dates?",
+      "instruction": "Respond within 3 seconds.",
+      "timeLimitSeconds": 3,
+      "examples": [
+        { "mode": "playful", "text": "Bad small talk, mostly. You?" },
+        { "mode": "honest", "text": "I get quiet when I'm nervous, honestly." },
+        { "mode": "curious", "text": "What's the most unexpected thing you've talked about on a date?" }
+      ],
+      "reflectionQuestions": [
+        { "id": "r1", "text": "Did you acknowledge the awkwardness or pretend it wasn't there?" },
+        { "id": "r2", "text": "Did you respond before overthinking?" }
+      ]
+    },
+    {
+      "id": "ir-006",
+      "category": "family",
+      "skill": "speed",
+      "difficulty": "hard",
+      "trainingModes": ["instant_response"],
+      "situation": "At a family dinner, your aunt comments on your eating habits.",
+      "otherPerson": "You're eating that? I thought you were watching your health.",
+      "instruction": "Respond within 3 seconds.",
+      "timeLimitSeconds": 3,
+      "examples": [
+        { "mode": "playful", "text": "I'm watching it right now. It looks delicious." },
+        { "mode": "honest", "text": "I'm enjoying myself tonight, thanks." },
+        { "mode": "assertive", "text": "I don't need commentary on my plate, but thanks." }
+      ],
+      "reflectionQuestions": [
+        { "id": "r1", "text": "Did you say what you actually wanted to say?" },
+        { "id": "r2", "text": "Did you let the comment pass or did you address it?" }
+      ]
+    },
+    {
+      "id": "tw-001",
+      "category": "friends",
+      "skill": "flexibility",
+      "difficulty": "easy",
+      "trainingModes": ["three_ways"],
+      "situation": "Your friend texts the group chat asking who wants to grab dinner tonight.",
+      "otherPerson": "You never want to do anything anymore. Come on!",
+      "instruction": "Write three different responses: playful, honest, and assertive.",
+      "examples": [
+        { "mode": "playful", "text": "Bold of you to call me out in front of everyone. I'm in." },
+        { "mode": "honest", "text": "I've been low energy lately but I do want to see you." },
+        { "mode": "assertive", "text": "I'll come if we keep it low-key. No big group thing." }
+      ],
+      "reflectionQuestions": [
+        { "id": "r1", "text": "Which version felt most like you?" },
+        { "id": "r2", "text": "Which version would you actually send?" }
+      ]
+    },
+    {
+      "id": "tw-002",
+      "category": "work",
+      "skill": "flexibility",
+      "difficulty": "medium",
+      "trainingModes": ["three_ways"],
+      "situation": "Your manager assigns you an extra task at 4:45 PM on a Friday.",
+      "otherPerson": "Can you knock this out before you head out? Should be quick.",
+      "instruction": "Write three different responses: playful, honest, and assertive.",
+      "examples": [
+        { "mode": "playful", "text": "Sure, if 'quick' means Monday morning." },
+        { "mode": "honest", "text": "I'm wrapping up for the day. Can I handle this Monday?" },
+        { "mode": "assertive", "text": "I won't be able to get to this today. Monday first thing." }
+      ],
+      "reflectionQuestions": [
+        { "id": "r1", "text": "Which version protects your time without burning the bridge?" },
+        { "id": "r2", "text": "Which would you actually say?" }
+      ]
+    },
+    {
+      "id": "tw-003",
+      "category": "dating",
+      "skill": "flexibility",
+      "difficulty": "medium",
+      "trainingModes": ["three_ways"],
+      "situation": "Someone you've been on a few dates with says they're not sure about commitment.",
+      "otherPerson": "I like you, I just don't know if I'm ready for anything serious.",
+      "instruction": "Write three different responses: playful, honest, and assertive.",
+      "examples": [
+        { "mode": "playful", "text": "Good thing I didn't propose yet." },
+        { "mode": "honest", "text": "I appreciate you being upfront. I'm looking for something steady." },
+        { "mode": "assertive", "text": "That's fair. I know what I want, so let me know when you figure it out." }
+      ],
+      "reflectionQuestions": [
+        { "id": "r1", "text": "Which version honors what you actually want?" },
+        { "id": "r2", "text": "Did any version feel like settling?" }
+      ]
+    },
+    {
+      "id": "tw-004",
+      "category": "family",
+      "skill": "flexibility",
+      "difficulty": "hard",
+      "trainingModes": ["three_ways"],
+      "situation": "Your parent criticizes your career choice in front of relatives.",
+      "otherPerson": "When are you going to get a real job?",
+      "instruction": "Write three different responses: playful, honest, and assertive.",
+      "examples": [
+        { "mode": "playful", "text": "Define 'real.' Does it come with a cape?" },
+        { "mode": "honest", "text": "This is my real job. I worked hard to get here." },
+        { "mode": "assertive", "text": "I'm not discussing my career at the dinner table." }
+      ],
+      "reflectionQuestions": [
+        { "id": "r1", "text": "Which version sets a boundary without escalating?" },
+        { "id": "r2", "text": "Which would you actually say in the moment?" }
+      ]
+    },
+    {
+      "id": "bp-001",
+      "category": "conflict",
+      "skill": "boundaries",
+      "difficulty": "easy",
+      "trainingModes": ["boundary_practice"],
+      "situation": "A friend keeps making jokes about your appearance.",
+      "otherPerson": "Relax, it's just a joke. You're too sensitive.",
+      "instruction": "Respond clearly and calmly. Set the boundary.",
+      "examples": [
+        { "mode": "assertive", "text": "I don't like jokes about that. Please stop." },
+        { "mode": "calm", "text": "I know it's a joke, but it doesn't land well for me." },
+        { "mode": "honest", "text": "It might be funny to you, but it bothers me." }
+      ],
+      "reflectionQuestions": [
+        { "id": "r1", "text": "Did you state the boundary without apologizing for it?" },
+        { "id": "r2", "text": "Did you explain yourself or just state it?" }
+      ]
+    },
+    {
+      "id": "bp-002",
+      "category": "work",
+      "skill": "boundaries",
+      "difficulty": "medium",
+      "trainingModes": ["boundary_practice"],
+      "situation": "A coworker consistently interrupts you in meetings.",
+      "otherPerson": "Oh, sorry, go ahead — what were you saying? Actually, let me just add one thing first...",
+      "instruction": "Respond clearly and calmly. Hold your space.",
+      "examples": [
+        { "mode": "assertive", "text": "I'd like to finish my point first, then I'll hand it over." },
+        { "mode": "calm", "text": "Let me finish, and then I'd love to hear your thoughts." },
+        { "mode": "honest", "text": "I notice I get cut off a lot. I'd like to finish." }
+      ],
+      "reflectionQuestions": [
+        { "id": "r1", "text": "Did you hold your ground or yield?" },
+        { "id": "r2", "text": "Were you calm or defensive?" }
+      ]
+    },
+    {
+      "id": "bp-003",
+      "category": "friends",
+      "skill": "boundaries",
+      "difficulty": "medium",
+      "trainingModes": ["boundary_practice"],
+      "situation": "A friend asks to borrow money again after not repaying last time.",
+      "otherPerson": "Come on, you know I'm good for it. I'll pay you back this time.",
+      "instruction": "Respond clearly and calmly. Hold the boundary.",
+      "examples": [
+        { "mode": "assertive", "text": "I'm not comfortable lending money again until the last amount is settled." },
+        { "mode": "honest", "text": "I value our friendship, and the last loan made things awkward." },
+        { "mode": "calm", "text": "I can't do that. Let's figure out another way I can help." }
+      ],
+      "reflectionQuestions": [
+        { "id": "r1", "text": "Did you set the boundary without over-explaining?" },
+        { "id": "r2", "text": "Did guilt shape your answer?" }
+      ]
+    },
+    {
+      "id": "bp-004",
+      "category": "family",
+      "skill": "boundaries",
+      "difficulty": "hard",
+      "trainingModes": ["boundary_practice"],
+      "situation": "Your sibling dismisses your feelings during an argument.",
+      "otherPerson": "You're overreacting. It's really not that big a deal.",
+      "instruction": "Respond clearly and calmly. Don't let your feelings be dismissed.",
+      "examples": [
+        { "mode": "assertive", "text": "My feelings are valid even if you don't share them." },
+        { "mode": "honest", "text": "It's a big deal to me. I need you to take that seriously." },
+        { "mode": "calm", "text": "You don't have to agree, but I need you to listen." }
+      ],
+      "reflectionQuestions": [
+        { "id": "r1", "text": "Did you let the dismissal pass or did you address it?" },
+        { "id": "r2", "text": "Were you able to stay calm?" }
+      ]
+    },
+    {
+      "id": "bp-005",
+      "category": "conflict",
+      "skill": "boundaries",
+      "difficulty": "hard",
+      "trainingModes": ["boundary_practice"],
+      "situation": "Someone pressures you to drink at a social event after you declined.",
+      "otherPerson": "One drink won't kill you. Don't be boring.",
+      "instruction": "Respond clearly and calmly. Don't cave to pressure.",
+      "examples": [
+        { "mode": "assertive", "text": "I said no. I don't need a reason." },
+        { "mode": "playful", "text": "I'm plenty boring sober, trust me." },
+        { "mode": "calm", "text": "I'm good with what I'm having. You enjoy yours." }
+      ],
+      "reflectionQuestions": [
+        { "id": "r1", "text": "Did you hold your no or did you negotiate?" },
+        { "id": "r2", "text": "Did you justify your choice or simply state it?" }
+      ]
+    },
+    {
+      "id": "pm-001",
+      "category": "friends",
+      "skill": "playfulness",
+      "difficulty": "easy",
+      "trainingModes": ["play_mode"],
+      "situation": "Your friend asks how your day was.",
+      "otherPerson": "How was your day?",
+      "instruction": "Make this interaction more playful. Experiment!",
+      "examples": [
+        { "mode": "playful", "text": "My day filed a restraining order against me." },
+        { "mode": "playful", "text": "I survived three meetings and two existential crises." },
+        { "mode": "playful", "text": "Honestly? My coffee did all the heavy lifting." }
+      ],
+      "reflectionQuestions": [
+        { "id": "r1", "text": "Did you allow yourself to be silly?" },
+        { "id": "r2", "text": "What kept you from being more playful?" }
+      ]
+    },
+    {
+      "id": "pm-002",
+      "category": "strangers",
+      "skill": "playfulness",
+      "difficulty": "easy",
+      "trainingModes": ["play_mode"],
+      "situation": "You're waiting in line at a coffee shop and the barista asks for your name.",
+      "otherPerson": "Name for the order?",
+      "instruction": "Make this interaction more playful. Experiment!",
+      "examples": [
+        { "mode": "playful", "text": "Batman. Kidding — it's Sam." },
+        { "mode": "playful", "text": "The one who ordered too much coffee." },
+        { "mode": "playful", "text": "Legend. But you can write 'Alex.'" }
+      ],
+      "reflectionQuestions": [
+        { "id": "r1", "text": "Did the playfulness feel natural or forced?" },
+        { "id": "r2", "text": "Did you smile while doing it?" }
+      ]
+    },
+    {
+      "id": "pm-003",
+      "category": "work",
+      "skill": "playfulness",
+      "difficulty": "medium",
+      "trainingModes": ["play_mode"],
+      "situation": "A coworker asks if you're ready for the big presentation.",
+      "otherPerson": "You ready for the presentation?",
+      "instruction": "Make this interaction more playful. Experiment!",
+      "examples": [
+        { "mode": "playful", "text": "Ready? I was born ready. Unfortunately I was born in October and it's March." },
+        { "mode": "playful", "text": "Define 'ready.' If you mean 'has slides,' then yes." },
+        { "mode": "playful", "text": "I'm at 'delusionally confident,' which is the best stage of prep." }
+      ],
+      "reflectionQuestions": [
+        { "id": "r1", "text": "Did playfulness help or hurt your confidence?" },
+        { "id": "r2", "text": "Were you worried about sounding unprofessional?" }
+      ]
+    },
+    {
+      "id": "pm-004",
+      "category": "dating",
+      "skill": "playfulness",
+      "difficulty": "medium",
+      "trainingModes": ["play_mode"],
+      "situation": "Your date asks what kind of music you like.",
+      "otherPerson": "So what kind of music are you into?",
+      "instruction": "Make this interaction more playful. Experiment!",
+      "examples": [
+        { "mode": "playful", "text": "The kind where I pretend I discovered the band first." },
+        { "mode": "playful", "text": "Anything I can dramatically lip-sync to in the car." },
+        { "mode": "playful", "text": "My Spotify Wrapped would concern you." }
+      ],
+      "reflectionQuestions": [
+        { "id": "r1", "text": "Did you reveal something real through the playfulness?" },
+        { "id": "r2", "text": "Did the interaction feel lighter?" }
+      ]
+    },
+    {
+      "id": "sr-001",
+      "category": "awkward",
+      "skill": "recovery",
+      "difficulty": "easy",
+      "trainingModes": ["social_recovery"],
+      "situation": "You made a joke that completely fell flat in a group conversation.",
+      "otherPerson": "...Anyway, like I was saying.",
+      "instruction": "Recover out loud. Don't withdraw.",
+      "examples": [
+        { "mode": "playful", "text": "And that's why I'm not a comedian. Moving on." },
+        { "mode": "honest", "text": "That one didn't land. Your turn." },
+        { "mode": "calm", "text": "Anyway — yeah, what were you saying?" }
+      ],
+      "reflectionQuestions": [
+        { "id": "r1", "text": "Did you acknowledge the awkwardness or pretend it didn't happen?" },
+        { "id": "r2", "text": "Did you stay present or mentally leave the room?" }
+      ]
+    },
+    {
+      "id": "sr-002",
+      "category": "awkward",
+      "skill": "recovery",
+      "difficulty": "easy",
+      "trainingModes": ["social_recovery"],
+      "situation": "You stumbled over your words while telling a story.",
+      "otherPerson": "Wait, what happened next?",
+      "instruction": "Recover out loud. Don't shut down.",
+      "examples": [
+        { "mode": "playful", "text": "My words just had a collision. Let me restart." },
+        { "mode": "honest", "text": "I lost my train of thought. Give me a second." },
+        { "mode": "calm", "text": "Okay, so basically what happened was..." }
+      ],
+      "reflectionQuestions": [
+        { "id": "r1", "text": "Did you let the stumble pass or did you freeze?" },
+        { "id": "r2", "text": "Were you able to continue?" }
+      ]
+    },
+    {
+      "id": "sr-003",
+      "category": "awkward",
+      "skill": "recovery",
+      "difficulty": "medium",
+      "trainingModes": ["social_recovery"],
+      "situation": "You called someone by the wrong name — twice.",
+      "otherPerson": "It's... actually Maria.",
+      "instruction": "Recover out loud. Don't spiral.",
+      "examples": [
+        { "mode": "playful", "text": "Maria! Yes. I was testing you. You passed." },
+        { "mode": "honest", "text": "I'm so sorry, Maria. I completely mixed that up." },
+        { "mode": "calm", "text": "My apologies — Maria. Got it now." }
+      ],
+      "reflectionQuestions": [
+        { "id": "r1", "text": "Did you over-apologize or keep it brief?" },
+        { "id": "r2", "text": "Did you let it go or keep replaying it?" }
+      ]
+    },
+    {
+      "id": "sr-004",
+      "category": "awkward",
+      "skill": "recovery",
+      "difficulty": "medium",
+      "trainingModes": ["social_recovery"],
+      "situation": "You froze when someone asked you a simple question in a group setting.",
+      "otherPerson": "You good? You kind of blanked there.",
+      "instruction": "Recover out loud. Don't disappear.",
+      "examples": [
+        { "mode": "playful", "text": "My brain just buffered. It's back now." },
+        { "mode": "honest", "text": "Yeah, I lost my train of thought. What were we talking about?" },
+        { "mode": "calm", "text": "Just processing. I'm here — go on." }
+      ],
+      "reflectionQuestions": [
+        { "id": "r1", "text": "Did you name what happened or pretend it didn't?" },
+        { "id": "r2", "text": "Did you re-engage or stay quiet?" }
+      ]
+    },
+    {
+      "id": "sr-005",
+      "category": "awkward",
+      "skill": "recovery",
+      "difficulty": "hard",
+      "trainingModes": ["social_recovery"],
+      "situation": "You said something that came out wrong and it sounded rude.",
+      "otherPerson": "Wow. Did you really just say that?",
+      "instruction": "Recover out loud. Don't withdraw or get defensive.",
+      "examples": [
+        { "mode": "honest", "text": "That came out wrong. I didn't mean it the way it sounded." },
+        { "mode": "calm", "text": "Let me rephrase — that's not what I meant to say." },
+        { "mode": "playful", "text": "My mouth sometimes skips the editing phase. Let me try again." }
+      ],
+      "reflectionQuestions": [
+        { "id": "r1", "text": "Did you get defensive or correct yourself?" },
+        { "id": "r2", "text": "Were you able to stay in the conversation?" }
+      ]
+    },
+    {
+      "id": "sr-006",
+      "category": "awkward",
+      "skill": "recovery",
+      "difficulty": "hard",
+      "trainingModes": ["social_recovery"],
+      "situation": "You misunderstood what someone said and responded to the wrong thing.",
+      "otherPerson": "No, I meant something totally different. Were you even listening?",
+      "instruction": "Recover out loud. Don't shut down.",
+      "examples": [
+        { "mode": "honest", "text": "I completely misheard you. My bad — what did you actually say?" },
+        { "mode": "calm", "text": "You're right, I went on a tangent. Let me actually listen." },
+        { "mode": "playful", "text": "I was answering a question nobody asked. Classic me. What did you say?" }
+      ],
+      "reflectionQuestions": [
+        { "id": "r1", "text": "Did you own the misunderstanding or get defensive?" },
+        { "id": "r2", "text": "Did you re-engage or retreat?" }
+      ]
+    }
+  ]
+}
