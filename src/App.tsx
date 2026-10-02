@@ -17,7 +17,7 @@ function App() {
       <main className="md:pl-64">
         <div className="mx-auto max-w-3xl px-5 pb-24 pt-6 md:px-8 md:pb-12">
           {page === 'home' && <HomePage onNavigate={setPage} />}
-          {page === 'train' && <TrainPage />}
+          {page === 'train' && <TrainPage />} 
           {page === 'scenarios' && <ScenariosPage />}
           {page === 'replay' && <ReplayPage />}
           {page === 'progress' && <ProgressPage />}
