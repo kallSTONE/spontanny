@@ -3,7 +3,7 @@ import { NavBar } from '@/components/NavBar';
 import { HomePage } from '@/pages/HomePage';
 import { TrainPage } from '@/pages/TrainPage';
 import { ScenariosPage } from '@/pages/ScenariosPage';
-import { ReplayPage } from '@/pages/ReplayPage';
+import { ReplayPage } from '@/pages/ReplayPage';  
 import { ProgressPage } from '@/pages/ProgressPage';  
 
 export type PageId = 'home' | 'train' | 'scenarios' | 'replay' | 'progress';
